@@ -7,6 +7,7 @@ import bg from '../common/images/bg.png'
 interface ICanvasProps {
   cmyk: TupleColor<number, 4>
   rgb: TupleColor<number, 3>
+  className: string
 }
 
 interface ICanvasState {
@@ -74,7 +75,7 @@ class ICanvas extends Component<ICanvasProps, ICanvasState> {
 
   render() {
     return (
-      <StyledDiv>
+      <StyledDiv className={this.props.className}>
         <img alt='bg' src={bg}/>
         <canvas ref={ICanvas.canvas} width={350} height={60} />
       </StyledDiv>

@@ -47,7 +47,32 @@ const StyledSVGWrapper = styled.div`
     line-height: 80px;
     font-size: 14px;
     text-align: center;
-}
+  }
+  @media (max-width: 1250px){
+    width:60px;
+    height:60px;
+    margin-right: 10px;
+    svg{
+      transform: scale(.75);
+      transform-origin: left top;
+    }
+    span{
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 760px){
+    width:40px;
+    height:40px;
+    margin-right: 10px;
+    svg{
+      transform: scale(.5);
+      transform-origin: left top;
+    }
+    span{
+      font-size: 12px;
+    }
+  }
+
 
 `
 

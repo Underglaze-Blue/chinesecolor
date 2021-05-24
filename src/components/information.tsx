@@ -29,6 +29,9 @@ const StyledWrapper = styled.div`
   flex: 1;
   min-width: 300px;
   margin: 0 1vh;
+  @media (max-width: 375px){
+   margin: 0;
+  }
 `
 
 const StyledMain = styled.main`
@@ -39,6 +42,20 @@ const StyledMain = styled.main`
   grid-template-columns: 160px 140px;
   border-radius: 10px;
   transition: background-color 2s ease-in;
+  @media (max-width: 1250px){
+    height: 10vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0 5vmin;
+    margin: 0 auto 2vmin;
+  }
+  @media (max-width: 375px){
+    height: 56px;
+    width: 96vw;
+    padding: 0;
+  }
 `
 
 const StyledTitle = styled.h1`
@@ -68,6 +85,12 @@ const StyledHSV = styled.section`
       margin-right: 5px;
     }
   }
+  @media (max-width: 1250px){  
+    flex-direction: row;
+  }
+  @media (max-width: 500px){
+    display: none;
+  }
 `
 
 const StyledInfo = styled.section`
@@ -84,6 +107,34 @@ const StyledInfo = styled.section`
     font-family: 'Quostige';
     font-weight: 400;
   }
+  @media (max-width: 1250px){
+    height: auto;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    padding:0;
+    h1{
+      line-height: 1!important;
+      min-height: auto;
+      font-size: 5vmin;
+      width:auto;
+      white-space: nowrap;
+    }
+    cite{
+      display: none;
+    }
+  }
+  @media (max-width: 500px){
+    h1{
+      font-size:50px;
+    }
+  }
+  @media (max-width: 375px){
+    h1{
+      font-size: 30px;
+    }
+  }
+
 `
 
 const StyledInformation = styled.section`
@@ -99,6 +150,14 @@ const StyledInformation = styled.section`
   cite{
     flex: 1;
     white-space: nowrap;
+    &:nth-child(-n+3){
+      @media (max-width: 1250px){
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 375px){
+    padding-right: 20px;
   }
 `
 

@@ -43,10 +43,21 @@ const StyledTitle = styled.h1`
   font-weight: bolder;
   font-family: 'Omega-Sans';
   text-align: center;
+  @media (max-width: 760px){
+    font-size: 30px;
+  }
+  @media (max-width: 375px){
+    font-size: 20px;
+    padding: 1vmin 0;
+  }
+
 `
 
 const StyledMain = styled.main`
   display: flex;
+  @media (max-width: 1250px){
+    flex-direction: column;
+  }
 `
 const mapStateToProps = (state: IColorInfoStore) => {
   return {

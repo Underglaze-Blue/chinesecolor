@@ -35,14 +35,13 @@ const StyledWrapper = styled.div`
     overflow-x: hidden;
     display: grid;
     grid-template-columns: repeat(auto-fill, calc(350px + 2vh));
-    grid-gap: 10px;
+    grid-gap: 1vh;
     justify-content: space-around;
     &::-webkit-scrollbar {
       width: 0;
     }
   }
   li{
-   width: 100%;
    height: 110px;
    background: rgba(255,255,255,.2);
    margin: 1vh 0;
@@ -61,6 +60,85 @@ const StyledWrapper = styled.div`
       transform: scale(1.15);
     }
    }
+    .color{
+      display: none;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    flex: 1;
+    width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    .canvasWrapper{
+      display: none;
+    }
+    ul{
+      grid-template-columns: repeat(auto-fill, 220px);
+      box-sizing: border-box;
+      height:70vh;
+      li{
+        position: relative;
+        .info{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding:1vmin;
+        }
+        .title{
+          position: absolute;
+          right: 1vmin;
+          top: 1vmin;
+          display: block;
+          strong{
+            margin-top: 20px;
+          }
+          cite{
+            margin-top: 20px;
+            span{
+              display: none;
+            }
+          }
+          .color-block{
+            display: none;
+          }
+        }
+        .color{
+          display: block;
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+  @media (max-width: 760px){
+    ul{
+      height: 76vh!important;
+    }
+  }
+  @media (max-width: 710px) {
+    ul{
+      grid-template-columns: repeat(auto-fill, calc(50% - 2vh));
+    }
+  }
+  @media (max-width: 470px) {
+    li{
+      height: 120px;
+      .info{
+        align-items: center!important;
+      }
+      .title{
+        top: 60px!important;
+        left: 1vmin;
+      }
+      .color{
+        margin-top: 24px;
+      }
+    }
+  }
+  @media (max-width: 375px){
+    ul{
+      height: 80vh!important;
+    }
   }
 `
 // 色卡信息
@@ -162,9 +240,9 @@ class ColorList extends Component<IColorsProps, IColorsState>{
         <li style={this.handleStyle(0.2)}
           onClick={() => {this.handleClick(item)}}
           key={item.name + item.pinyin}>
-          <ICanvas cmyk={item.CMYK} rgb={item.RGB} />
+          <ICanvas className="canvasWrapper" cmyk={item.CMYK} rgb={item.RGB} />
           <StyledArticle>
-            <StyledInformation className="font-small">
+            <StyledInformation className="font-small info">
               <span>RGB: {item.RGB.join(', ')}</span>
               <span>CMYK: {item.CMYK.join(', ')}</span>
               <span>HEX: {item.hex.toLocaleUpperCase()}</span>
@@ -173,9 +251,10 @@ class ColorList extends Component<IColorsProps, IColorsState>{
               <StyledTitle>
                 <cite>{item.name} <span className="font-small">{item.pinyin.toLocaleUpperCase()}</span></cite>
               </StyledTitle>
-              <StyledSection style={{backgroundColor: `rgb(${item.RGB.join(',')})`}}/>
+              <StyledSection className='color-block' style={{backgroundColor: `rgb(${item.RGB.join(',')})`}}/>
             </StyledInformation>
           </StyledArticle>
+          <StyledSection className='color' style={{backgroundColor: `rgb(${item.RGB.join(',')})`}}/>
         </li>
       )
     })
