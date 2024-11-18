@@ -1,4 +1,4 @@
-var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPropertySymbols,r=Object.prototype.propertyIsEnumerable,a=(t,n,r)=>n in t?e(t,n,{enumerable:!0,configurable:!0,writable:!0,value:r}):t[n]=r,s=(e,s)=>{for(var o in s||(s={}))t.call(s,o)&&a(e,o,s[o]);if(n)for(var o of n(s))r.call(s,o)&&a(e,o,s[o]);return e},o=(e,t,n)=>(a(e,"symbol"!=typeof t?t+"":t,n),n);import{c as i,a as l,b as p,q as c,r as d,W as h,d as m,C as u,p as f,w as g,L as x,e as b,P as v}from"./vendor.fa26760f.js";var w;!function(e=".",t="__import__"){try{self[t]=new Function("u","return import(u)")}catch(n){const r=new URL(e,location),a=e=>{URL.revokeObjectURL(e.src),e.remove()};self[t]=e=>new Promise(((n,s)=>{const o=new URL(e,r);if(self[t].moduleMap[o])return n(self[t].moduleMap[o]);const i=new Blob([`import * as m from '${o}';`,`${t}.moduleMap['${o}']=m;`],{type:"text/javascript"}),l=Object.assign(document.createElement("script"),{type:"module",src:URL.createObjectURL(i),onerror(){s(new Error(`Failed to import: ${e}`)),a(l)},onload(){n(self[t].moduleMap[o]),a(l)}});document.head.appendChild(l)})),self[t].moduleMap={}}}("/assets/"),(w||(w={})).SET_COLOR="SET_COLOR";const y={CMYK:[4,5,18,0],RGB:[249,244,220],hex:"#f9f4dc",name:"乳白",pinyin:"rubai",gray:242.86},E=l(i({colorStore:(e=y,a)=>{switch(a.type){case w.SET_COLOR:e=((e,a)=>{var s={};for(var o in e)t.call(e,o)&&a.indexOf(o)<0&&(s[o]=e[o]);if(null!=e&&n)for(var o of n(e))a.indexOf(o)<0&&r.call(e,o)&&(s[o]=e[o]);return s})(a.info,[]);break;default:return e}return e}}));const C=p.create({baseURL:""});C.interceptors.request.use((e=>s(s({},e),{params:s(s({},e.params||{}),{_:Number(new Date)})})),(e=>Promise.resolve(e))),C.interceptors.response.use((e=>(null==e?void 0:e.data)?Promise.resolve(e):Promise.reject(new Error("response 不存在"))),(e=>(console.log(e),Promise.resolve({data:s({success:!1,msg:"string"==typeof e?e:e.message},e)}))));const A=e=>new Promise(((t,n)=>{C.request(e).then((e=>{const r=e.data;200===e.status?t(r):(console.log(r.message),n(r))}))}));var k=new class{get(e,t={}){return A({url:e,method:"get",params:t})}post(e,t={}){return A({url:e,method:"post",data:t})}};const R=e=>{let[t,n,r]=e;t/=255,n/=255,r/=255;let a,s,o=0;const i=Math.min(t,n,r),l=s=Math.max(t,n,r),p=l-i;if(l===i)o=0;else{switch(l){case t:o=(n-r)/p+(n<r?6:0);break;case n:o=2+(r-t)/p;break;case r:o=4+(t-n)/p}o=Math.round(60*o)}return a=0===l?0:1-i/l,a=Math.round(100*a),s=Math.round(100*s),[o,a,s]};const B=c.div`
+var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPropertySymbols,r=Object.prototype.propertyIsEnumerable,a=(t,n,r)=>n in t?e(t,n,{enumerable:!0,configurable:!0,writable:!0,value:r}):t[n]=r,s=(e,s)=>{for(var o in s||(s={}))t.call(s,o)&&a(e,o,s[o]);if(n)for(var o of n(s))r.call(s,o)&&a(e,o,s[o]);return e},o=(e,t,n)=>(a(e,"symbol"!=typeof t?t+"":t,n),n);import{c as i,a as l,b as c,q as p,r as d,W as h,d as m,C as u,p as f,w as g,L as x,e as b,P as v}from"./vendor.fa26760f.js";var w;!function(e=".",t="__import__"){try{self[t]=new Function("u","return import(u)")}catch(n){const r=new URL(e,location),a=e=>{URL.revokeObjectURL(e.src),e.remove()};self[t]=e=>new Promise(((n,s)=>{const o=new URL(e,r);if(self[t].moduleMap[o])return n(self[t].moduleMap[o]);const i=new Blob([`import * as m from '${o}';`,`${t}.moduleMap['${o}']=m;`],{type:"text/javascript"}),l=Object.assign(document.createElement("script"),{type:"module",src:URL.createObjectURL(i),onerror(){s(new Error(`Failed to import: ${e}`)),a(l)},onload(){n(self[t].moduleMap[o]),a(l)}});document.head.appendChild(l)})),self[t].moduleMap={}}}("/chinesecolor/assets/"),(w||(w={})).SET_COLOR="SET_COLOR";const y={CMYK:[4,5,18,0],RGB:[249,244,220],hex:"#f9f4dc",name:"乳白",pinyin:"rubai",gray:242.86},E=l(i({colorStore:(e=y,a)=>{switch(a.type){case w.SET_COLOR:e=((e,a)=>{var s={};for(var o in e)t.call(e,o)&&a.indexOf(o)<0&&(s[o]=e[o]);if(null!=e&&n)for(var o of n(e))a.indexOf(o)<0&&r.call(e,o)&&(s[o]=e[o]);return s})(a.info,[]);break;default:return e}return e}}));const C=c.create({baseURL:""});C.interceptors.request.use((e=>s(s({},e),{params:s(s({},e.params||{}),{_:Number(new Date)})})),(e=>Promise.resolve(e))),C.interceptors.response.use((e=>(null==e?void 0:e.data)?Promise.resolve(e):Promise.reject(new Error("response 不存在"))),(e=>(console.log(e),Promise.resolve({data:s({success:!1,msg:"string"==typeof e?e:e.message},e)}))));const A=e=>new Promise(((t,n)=>{C.request(e).then((e=>{const r=e.data;200===e.status?t(r):(console.log(r.message),n(r))}))}));var k=new class{get(e,t={}){return A({url:e,method:"get",params:t})}post(e,t={}){return A({url:e,method:"post",data:t})}};const R=e=>{let[t,n,r]=e;t/=255,n/=255,r/=255;let a,s,o=0;const i=Math.min(t,n,r),l=s=Math.max(t,n,r),c=l-i;if(l===i)o=0;else{switch(l){case t:o=(n-r)/c+(n<r?6:0);break;case n:o=2+(r-t)/c;break;case r:o=4+(t-n)/c}o=Math.round(60*o)}return a=0===l?0:1-i/l,a=Math.round(100*a),s=Math.round(100*s),[o,a,s]};const B=p.div`
   position: relative;
   width: 350px;
   height: 60px;
@@ -11,7 +11,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
    to {
       transform: rotate(1turn);
    }
-`,F=c.div`
+`,F=p.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   display: flex;
   justify-content: center;
   align-items: center;
-`,U=c.aside`
+`,U=p.aside`
   position: relative;
   width: 8em;
   height: 8em;
@@ -51,7 +51,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   &::after {
     filter: blur(10px);
   }
-`;class j extends d.Component{render(){return d.createElement(F,null,d.createElement(U,null))}}var O={setColorInfo:e=>({type:w.SET_COLOR,info:e})};const H=c.div`
+`;class j extends d.Component{render(){return d.createElement(F,null,d.createElement(U,null))}}var O={setColorInfo:e=>({type:w.SET_COLOR,info:e})};const H=p.div`
   flex: 0 0 70vw;
   margin-right: 5vw;
   width: 70vw;
@@ -173,27 +173,27 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
       height: 80vh!important;
     }
   }
-`,M=c.article`
+`,M=p.article`
   display: flex;
   color: #ffffff;
   font-size: 14px;
   flex-direction: column;
-`,N=c.aside`
+`,N=p.aside`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-around;
-`,D=c.strong`
+`,D=p.strong`
   flex: 0 0 60%;
   white-space: nowrap;
   span{
     font-family: 'VictorMono';
   }
-`,X=c.section`
+`,X=p.section`
   flex: 0 0 25px;
   height: 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-`;class L extends d.Component{constructor(e){super(e),this.handleGetColors=()=>{this.setState({loading:!0}),(async()=>k.get("./data/colors.json"))().then((e=>{const t=((n=e).sort(((e,t)=>R(e.RGB)[0]===R(t.RGB)[0]?R(t.RGB)[1]-R(e.RGB)[1]:R(t.RGB)[0]-R(e.RGB)[0])),n);var n;const r=Math.random()*t.length>>0,[a,o,i]=t[r].RGB;this.setState({colors:t,gray:(30*a+59*o+11*i)/100}),this.props.setColorInfo(s(s({},this.state.colors[r]),{gray:this.state.gray}))})).finally((()=>{setTimeout((()=>{this.setState({loading:!1})}),1500)}))},this.handleClick=e=>{const[t,n,r]=e.RGB,a=(30*t+59*n+11*r)/100;this.setState({gray:a}),this.props.setColorInfo(s(s({},e),{gray:a}))},this.handleBackgroundColor=(e,t)=>e>0?`rgba(0,0,0,${t})`:`rgba(255,255,255,${t})`,this.handleStyle=e=>({backgroundColor:this.handleBackgroundColor(this.state.gray-175,e),boxShadow:`0 0 10px ${this.handleBackgroundColor(175-this.state.gray,e)}`}),this._renderColors=e=>e.map(((e,t,n)=>d.createElement("li",{style:this.handleStyle(.2),onClick:()=>{this.handleClick(e)},key:e.name+e.pinyin},d.createElement(S,{className:"canvasWrapper",cmyk:e.CMYK,rgb:e.RGB}),d.createElement(M,null,d.createElement(N,{className:"font-small info"},d.createElement("span",null,"RGB: ",e.RGB.join(", ")),d.createElement("span",null,"CMYK: ",e.CMYK.join(", ")),d.createElement("span",null,"HEX: ",e.hex.toLocaleUpperCase())),d.createElement(N,{className:"title"},d.createElement(D,null,d.createElement("cite",null,e.name," ",d.createElement("span",{className:"font-small"},e.pinyin.toLocaleUpperCase()))),d.createElement(X,{className:"color-block",style:{backgroundColor:`rgb(${e.RGB.join(",")})`}}))),d.createElement(X,{className:"color",style:{backgroundColor:`rgb(${e.RGB.join(",")})`}})))),this.state={colors:[],gray:0,loading:!1}}componentDidMount(){this.handleGetColors()}render(){return this.state.loading?d.createElement(j,null):d.createElement(H,{style:this.handleStyle(.1)},d.createElement("ul",null,this._renderColors(this.state.colors)))}}var T=m((e=>e),O)(L);class z extends d.Component{constructor(){super(...arguments),o(this,"checkProps",(e=>{const{start:t,suffix:n,prefix:r,redraw:a,duration:s,separator:o,decimals:i,decimal:l}=this.props;return s!==e.duration||t!==e.start||n!==e.suffix||r!==e.prefix||o!==e.separator||i!==e.decimals||l!==e.decimal||a})),o(this,"createInstance",(()=>("function"==typeof this.props.children&&g(this.containerRef.current&&(this.containerRef.current instanceof HTMLElement||this.containerRef.current instanceof SVGTextElement||this.containerRef.current instanceof SVGTSpanElement)),((e,t)=>{const{decimal:n,decimals:r,duration:a,easingFn:s,end:o,formattingFn:i,prefix:l,separator:p,start:c,suffix:d,useEasing:h}=t;return new u(e,c,o,r,a,{decimal:n,easingFn:s,formattingFn:i,separator:p,prefix:l,suffix:d,useEasing:h,useGrouping:!!p})})(this.containerRef.current,this.props)))),o(this,"pauseResume",(()=>{const{reset:e,restart:t,update:n}=this,{onPauseResume:r}=this.props;this.instance.pauseResume(),r({reset:e,start:t,update:n})})),o(this,"reset",(()=>{const{pauseResume:e,restart:t,update:n}=this,{onReset:r}=this.props;this.instance.reset(),r({pauseResume:e,start:t,update:n})})),o(this,"restart",(()=>{this.reset(),this.start()})),o(this,"start",(()=>{const{pauseResume:e,reset:t,restart:n,update:r}=this,{delay:a,onEnd:s,onStart:o}=this.props,i=()=>this.instance.start((()=>s({pauseResume:e,reset:t,start:n,update:r})));a>0?this.timeoutId=setTimeout(i,1e3*a):i(),o({pauseResume:e,reset:t,update:r})})),o(this,"update",(e=>{const{pauseResume:t,reset:n,restart:r}=this,{onUpdate:a}=this.props;this.instance.update(e),a({pauseResume:t,reset:n,start:r})})),o(this,"containerRef",d.createRef())}componentDidMount(){const{children:e,delay:t}=this.props;this.instance=this.createInstance(),"function"==typeof e&&0!==t||this.start()}shouldComponentUpdate(e){const{end:t}=this.props;return this.checkProps(e)||t!==e.end}componentDidUpdate(e){const{end:t,preserveValue:n}=this.props;this.checkProps(e)&&(this.instance.reset(),this.instance=this.createInstance(),this.start()),t!==e.end&&(n||this.instance.reset(),this.instance.update(t))}componentWillUnmount(){this.timeoutId&&clearTimeout(this.timeoutId),this.instance.reset()}render(){const{children:e,className:t,style:n}=this.props,{containerRef:r,pauseResume:a,reset:s,restart:o,update:i}=this;return"function"==typeof e?e({countUpRef:r,pauseResume:a,reset:s,start:o,update:i}):d.createElement("span",{className:t,ref:r,style:n})}}o(z,"propTypes",{decimal:f.string,decimals:f.number,delay:f.number,easingFn:f.func,end:f.number.isRequired,formattingFn:f.func,onEnd:f.func,onStart:f.func,prefix:f.string,redraw:f.bool,separator:f.string,start:f.number,startOnMount:f.bool,suffix:f.string,style:f.object,useEasing:f.bool,preserveValue:f.bool}),o(z,"defaultProps",{decimal:".",decimals:0,delay:null,duration:null,easingFn:null,formattingFn:null,onEnd:()=>{},onPauseResume:()=>{},onReset:()=>{},onStart:()=>{},onUpdate:()=>{},prefix:"",redraw:!1,separator:"",start:0,startOnMount:!0,suffix:"",style:void 0,useEasing:!0,preserveValue:!1});const G=c.svg`
+`;class L extends d.Component{constructor(e){super(e),this.handleGetColors=()=>{this.setState({loading:!0}),(async()=>k.get("./data/colors.json"))().then((e=>{const t=((n=e).sort(((e,t)=>R(e.RGB)[0]===R(t.RGB)[0]?R(t.RGB)[1]-R(e.RGB)[1]:R(t.RGB)[0]-R(e.RGB)[0])),n);var n;const r=Math.random()*t.length>>0,[a,o,i]=t[r].RGB;this.setState({colors:t,gray:(30*a+59*o+11*i)/100}),this.props.setColorInfo(s(s({},this.state.colors[r]),{gray:this.state.gray}))})).finally((()=>{setTimeout((()=>{this.setState({loading:!1})}),1500)}))},this.handleClick=e=>{const[t,n,r]=e.RGB,a=(30*t+59*n+11*r)/100;this.setState({gray:a}),this.props.setColorInfo(s(s({},e),{gray:a}))},this.handleBackgroundColor=(e,t)=>e>0?`rgba(0,0,0,${t})`:`rgba(255,255,255,${t})`,this.handleStyle=e=>({backgroundColor:this.handleBackgroundColor(this.state.gray-175,e),boxShadow:`0 0 10px ${this.handleBackgroundColor(175-this.state.gray,e)}`}),this._renderColors=e=>e.map(((e,t,n)=>d.createElement("li",{style:this.handleStyle(.2),onClick:()=>{this.handleClick(e)},key:e.name+e.pinyin},d.createElement(S,{className:"canvasWrapper",cmyk:e.CMYK,rgb:e.RGB}),d.createElement(M,null,d.createElement(N,{className:"font-small info"},d.createElement("span",null,"RGB: ",e.RGB.join(", ")),d.createElement("span",null,"CMYK: ",e.CMYK.join(", ")),d.createElement("span",null,"HEX: ",e.hex.toLocaleUpperCase())),d.createElement(N,{className:"title"},d.createElement(D,null,d.createElement("cite",null,e.name," ",d.createElement("span",{className:"font-small"},e.pinyin.toLocaleUpperCase()))),d.createElement(X,{className:"color-block",style:{backgroundColor:`rgb(${e.RGB.join(",")})`}}))),d.createElement(X,{className:"color",style:{backgroundColor:`rgb(${e.RGB.join(",")})`}})))),this.state={colors:[],gray:0,loading:!1}}componentDidMount(){this.handleGetColors()}render(){return this.state.loading?d.createElement(j,null):d.createElement(H,{style:this.handleStyle(.1)},d.createElement("ul",null,this._renderColors(this.state.colors)))}}var T=m((e=>e),O)(L);class z extends d.Component{constructor(){super(...arguments),o(this,"checkProps",(e=>{const{start:t,suffix:n,prefix:r,redraw:a,duration:s,separator:o,decimals:i,decimal:l}=this.props;return s!==e.duration||t!==e.start||n!==e.suffix||r!==e.prefix||o!==e.separator||i!==e.decimals||l!==e.decimal||a})),o(this,"createInstance",(()=>("function"==typeof this.props.children&&g(this.containerRef.current&&(this.containerRef.current instanceof HTMLElement||this.containerRef.current instanceof SVGTextElement||this.containerRef.current instanceof SVGTSpanElement)),((e,t)=>{const{decimal:n,decimals:r,duration:a,easingFn:s,end:o,formattingFn:i,prefix:l,separator:c,start:p,suffix:d,useEasing:h}=t;return new u(e,p,o,r,a,{decimal:n,easingFn:s,formattingFn:i,separator:c,prefix:l,suffix:d,useEasing:h,useGrouping:!!c})})(this.containerRef.current,this.props)))),o(this,"pauseResume",(()=>{const{reset:e,restart:t,update:n}=this,{onPauseResume:r}=this.props;this.instance.pauseResume(),r({reset:e,start:t,update:n})})),o(this,"reset",(()=>{const{pauseResume:e,restart:t,update:n}=this,{onReset:r}=this.props;this.instance.reset(),r({pauseResume:e,start:t,update:n})})),o(this,"restart",(()=>{this.reset(),this.start()})),o(this,"start",(()=>{const{pauseResume:e,reset:t,restart:n,update:r}=this,{delay:a,onEnd:s,onStart:o}=this.props,i=()=>this.instance.start((()=>s({pauseResume:e,reset:t,start:n,update:r})));a>0?this.timeoutId=setTimeout(i,1e3*a):i(),o({pauseResume:e,reset:t,update:r})})),o(this,"update",(e=>{const{pauseResume:t,reset:n,restart:r}=this,{onUpdate:a}=this.props;this.instance.update(e),a({pauseResume:t,reset:n,start:r})})),o(this,"containerRef",d.createRef())}componentDidMount(){const{children:e,delay:t}=this.props;this.instance=this.createInstance(),"function"==typeof e&&0!==t||this.start()}shouldComponentUpdate(e){const{end:t}=this.props;return this.checkProps(e)||t!==e.end}componentDidUpdate(e){const{end:t,preserveValue:n}=this.props;this.checkProps(e)&&(this.instance.reset(),this.instance=this.createInstance(),this.start()),t!==e.end&&(n||this.instance.reset(),this.instance.update(t))}componentWillUnmount(){this.timeoutId&&clearTimeout(this.timeoutId),this.instance.reset()}render(){const{children:e,className:t,style:n}=this.props,{containerRef:r,pauseResume:a,reset:s,restart:o,update:i}=this;return"function"==typeof e?e({countUpRef:r,pauseResume:a,reset:s,start:o,update:i}):d.createElement("span",{className:t,ref:r,style:n})}}o(z,"propTypes",{decimal:f.string,decimals:f.number,delay:f.number,easingFn:f.func,end:f.number.isRequired,formattingFn:f.func,onEnd:f.func,onStart:f.func,prefix:f.string,redraw:f.bool,separator:f.string,start:f.number,startOnMount:f.bool,suffix:f.string,style:f.object,useEasing:f.bool,preserveValue:f.bool}),o(z,"defaultProps",{decimal:".",decimals:0,delay:null,duration:null,easingFn:null,formattingFn:null,onEnd:()=>{},onPauseResume:()=>{},onReset:()=>{},onStart:()=>{},onUpdate:()=>{},prefix:"",redraw:!1,separator:"",start:0,startOnMount:!0,suffix:"",style:void 0,useEasing:!0,preserveValue:!1});const G=p.svg`
   circle {
     stroke-dashoffset: 0;
     transition: all 2s linear;
@@ -205,7 +205,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
       stroke-dashoffset: 0;
     }
   }
-`,K=c.div`
+`,K=p.div`
   display: block;
   height: 80px;
   width: 80px;
@@ -252,14 +252,14 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   }
 
 
-`,q=class extends d.PureComponent{constructor(e){super(e);const t=2*Math.PI*35;this.state={perimeter:t,radius:35,strokeDashoffset:2*Math.PI*35}}componentDidUpdate(){this.setState({strokeDashoffset:this.state.perimeter-this.props.percent/100*this.state.perimeter})}render(){return d.createElement(K,{"data-percent":this.props.percent},d.createElement(G,{id:"svg",width:"80",height:"80"},d.createElement("circle",{r:this.state.radius,cx:"40",cy:"40",fill:"transparent"}),d.createElement("circle",{ref:q.circle,style:{strokeDashoffset:this.state.strokeDashoffset,stroke:this.props.color},className:"bar",r:this.state.radius,cx:"40",cy:"40",fill:"transparent",strokeDasharray:this.state.perimeter})),d.createElement("span",null,d.createElement(z,{preserveValue:!0,end:this.props.percent})))}};let Q=q;Q.circle=d.createRef();const Y=c.div`
+`,q=class extends d.PureComponent{constructor(e){super(e);const t=2*Math.PI*35;this.state={perimeter:t,radius:35,strokeDashoffset:2*Math.PI*35}}componentDidUpdate(){this.setState({strokeDashoffset:this.state.perimeter-this.props.percent/100*this.state.perimeter})}render(){return d.createElement(K,{"data-percent":this.props.percent},d.createElement(G,{id:"svg",width:"80",height:"80"},d.createElement("circle",{r:this.state.radius,cx:"40",cy:"40",fill:"transparent"}),d.createElement("circle",{ref:q.circle,style:{strokeDashoffset:this.state.strokeDashoffset,stroke:this.props.color},className:"bar",r:this.state.radius,cx:"40",cy:"40",fill:"transparent",strokeDasharray:this.state.perimeter})),d.createElement("span",null,d.createElement(z,{preserveValue:!0,end:this.props.percent})))}};let Q=q;Q.circle=d.createRef();const Y=p.div`
   flex: 1;
   min-width: 300px;
   margin: 0 1vh;
   @media (max-width: 375px){
    margin: 0;
   }
-`,V=c.main`
+`,V=p.main`
   width: 300px;
   height: 80vh;
   margin: 0 auto;
@@ -281,7 +281,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
     width: 96vw;
     padding: 0;
   }
-`,W=c.h1`
+`,W=p.h1`
   font-size: 100px;
   width: 110px;
   min-height: 540px;
@@ -293,7 +293,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   align-items: center;
   color: #ffffff;
   font-family: 'yuweif2229ad0221222ab', "Microsoft YaHei";
-`,J=c.section`
+`,J=p.section`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -312,7 +312,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   @media (max-width: 500px){
     display: none;
   }
-`,Z=c.section`
+`,Z=p.section`
   box-sizing: border-box;
   height: 620px;
   padding: 20px 5px 0;
@@ -354,7 +354,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
     }
   }
 
-`,$=c.section`
+`,$=p.section`
   grid-column-start: 1;
   grid-column-end: 3; 
   padding: 10px;
@@ -376,7 +376,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   @media (max-width: 375px){
     padding-right: 20px;
   }
-`;class _ extends d.PureComponent{constructor(e){super(e),this.handleBackgroundColor=(e,t)=>e>0?`rgba(0,0,0,${t})`:`rgba(255,255,255,${t})`,this.renderCountUp=(e,t)=>{const n="RGB"===t?e:R(e),r=["°","%","%"];return n.map(((e,a)=>d.createElement(d.Fragment,{key:t.split("")[a]},d.createElement(z,{preserveValue:!0,end:e}),d.createElement("span",null,"RGB"===t?"":r[a],a<n.length-1?", ":""))))},this.renderSVG=e=>{const t=["#0093D3","#CC006B","#FFF10C","#333333"],n=["C","M","Y","K"];return e.map(((e,r)=>d.createElement("aside",{key:t[r]},d.createElement("span",null,n[r]),d.createElement(Q,{key:t[r],color:t[r],percent:e}))))};const t=this.props.colorInfo,n=R(t.RGB);this.state={r:[0,t.RGB[0]],g:[0,t.RGB[1]],b:[0,t.RGB[2]],h:[0,n[0]],s:[0,n[1]],v:[0,n[2]],gray:[0,t.gray]}}render(){const e={backgroundColor:this.handleBackgroundColor(this.props.colorInfo.gray-175,.1),boxShadow:`0 0 10px ${this.handleBackgroundColor(175-this.props.colorInfo.gray,.1)}`};return d.createElement(Y,null,d.createElement(V,{style:e},d.createElement(J,null,this.renderSVG(this.props.colorInfo.CMYK)),d.createElement(Z,null,d.createElement(W,{style:{lineHeight:this.props.colorInfo.name.length<5?"140px":"110px"}},this.props.colorInfo.name),d.createElement("cite",null,this.props.colorInfo.pinyin.toLocaleUpperCase())),d.createElement($,null,d.createElement("cite",null,"RGB: ",this.renderCountUp(this.props.colorInfo.RGB,"RGB")),d.createElement("cite",null,"Gray scale:",d.createElement(z,{key:"gray",decimals:2,preserveValue:!0,end:this.props.colorInfo.gray})),d.createElement("cite",null,"HSV: ",this.renderCountUp(this.props.colorInfo.RGB,"HSV")),d.createElement("cite",null,"HEX: ",this.props.colorInfo.hex.toLocaleUpperCase()))))}}var ee=m((e=>({colorInfo:e.colorStore})))(_);const te=c.div`
+`;class _ extends d.PureComponent{constructor(e){super(e),this.handleBackgroundColor=(e,t)=>e>0?`rgba(0,0,0,${t})`:`rgba(255,255,255,${t})`,this.renderCountUp=(e,t)=>{const n="RGB"===t?e:R(e),r=["°","%","%"];return n.map(((e,a)=>d.createElement(d.Fragment,{key:t.split("")[a]},d.createElement(z,{preserveValue:!0,end:e}),d.createElement("span",null,"RGB"===t?"":r[a],a<n.length-1?", ":""))))},this.renderSVG=e=>{const t=["#0093D3","#CC006B","#FFF10C","#333333"],n=["C","M","Y","K"];return e.map(((e,r)=>d.createElement("aside",{key:t[r]},d.createElement("span",null,n[r]),d.createElement(Q,{key:t[r],color:t[r],percent:e}))))};const t=this.props.colorInfo,n=R(t.RGB);this.state={r:[0,t.RGB[0]],g:[0,t.RGB[1]],b:[0,t.RGB[2]],h:[0,n[0]],s:[0,n[1]],v:[0,n[2]],gray:[0,t.gray]}}render(){const e={backgroundColor:this.handleBackgroundColor(this.props.colorInfo.gray-175,.1),boxShadow:`0 0 10px ${this.handleBackgroundColor(175-this.props.colorInfo.gray,.1)}`};return d.createElement(Y,null,d.createElement(V,{style:e},d.createElement(J,null,this.renderSVG(this.props.colorInfo.CMYK)),d.createElement(Z,null,d.createElement(W,{style:{lineHeight:this.props.colorInfo.name.length<5?"140px":"110px"}},this.props.colorInfo.name),d.createElement("cite",null,this.props.colorInfo.pinyin.toLocaleUpperCase())),d.createElement($,null,d.createElement("cite",null,"RGB: ",this.renderCountUp(this.props.colorInfo.RGB,"RGB")),d.createElement("cite",null,"Gray scale:",d.createElement(z,{key:"gray",decimals:2,preserveValue:!0,end:this.props.colorInfo.gray})),d.createElement("cite",null,"HSV: ",this.renderCountUp(this.props.colorInfo.RGB,"HSV")),d.createElement("cite",null,"HEX: ",this.props.colorInfo.hex.toLocaleUpperCase()))))}}var ee=m((e=>({colorInfo:e.colorStore})))(_);const te=p.div`
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -385,7 +385,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
-`,ne=c.main`
+`,ne=p.main`
   width: 100vw;
   height: 100vh;
   padding: 0 0 10vh;
@@ -393,7 +393,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
   transition: background-color 2s ease-in;
   overflow: hidden;
   box-sizing: border-box;
-`,re=c.h1`
+`,re=p.h1`
   padding: 2vh 0;
   transition: color 2s ease-in;
   font-weight: bolder;
@@ -407,7 +407,7 @@ var e=Object.defineProperty,t=Object.prototype.hasOwnProperty,n=Object.getOwnPro
     padding: 1vmin 0;
   }
 
-`,ae=c.main`
+`,ae=p.main`
   display: flex;
   @media (max-width: 1250px){
     flex-direction: column;
